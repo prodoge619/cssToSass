@@ -1,0 +1,98 @@
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width} ){
+         @content;
+    }
+
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width }){
+         @content;
+    }
+
+}
+
+
+.aboutMe {
+	@extend %center;
+  padding: 5%;
+	@extend %color;
+	@extend %fontSize;
+  
+  &::after {
+      @include tablet {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+}
+
+
+
+.mainContent {
+	@extend %center;
+	background:$color-background;
+	padding: 6% 3%;
+  
+  & p {
+	@extend %color;
+	@extend %fontSize;
+	padding-bottom: 10%;
+}
+  &:after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+  
+}
+
+.contactArea {
+	padding: 7% 3%;
+	@extend %center;
+	@extend %fontSize;
+  
+  & p,& a {
+    	@extend %color;
+  }
+}
+
+
+
+.banner {
+  @include tablet {
+    max-width: 40%;
+	  float: right;
+}  
+  
+}
+
+.story {
+  @include tablet {
+    max-width: 60%;
+    padding-right:30px;
+	  padding-left: 30px;
+	  margin-top: 5%;
+  }
+}
+
+.middle {
+     @include tablet  {
+        width: 45%;
+        padding-left:10%;
+        float: left;
+        height: 500px;
+    }
+    
+   @include desktop  {
+      width: 33.33%;
+			padding-left:3%;
+			height: 500px;
+    }
+  
+}
+
+
+

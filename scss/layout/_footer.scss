@@ -1,0 +1,54 @@
+
+.backtop {
+  @extend %textdeco;
+  @extend %fontweight;
+	float: right;
+	margin-right: 3%;
+	color: $black;
+  @media #{$brk-tablet} {
+    display: none;
+}
+  
+  &::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+    
+    	
+	
+}
+
+
+footer  {
+	padding-top: 7%;
+	padding-bottom: 7%;
+  
+  &  h4 {
+    margin-left: 3%;
+    display: inline;
+  }
+
+}
+
+.footnav {
+	display: none;
+  @media #{$brk-tablet} {
+    text-decoration: none;
+    display:inline-block;
+    width: 40%;
+    float: right;
+    text-align: right;
+    padding-right: 5%;
+  }
+
+  & a {
+     @media #{$brk-tablet} {
+        text-decoration: none;
+        padding-left: 2%;
+        color: black;
+        font-weight: bold;
+      }
+    }
+}
+

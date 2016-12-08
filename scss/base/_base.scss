@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+}
+
+li a{
+	text-decoration: none;
+
+  &:hover{
+       color:$hover;
+    }
+
+}
+
+#wrapper {
+	max-width: 1200px;
+  background: #f2f2f2;
+	margin: 0 auto;
+}
+
+#wrapper, body{
+	background: $color-background;
+}

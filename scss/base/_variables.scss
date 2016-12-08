@@ -1,0 +1,25 @@
+// color variables
+
+$Dark_Cerulean: #a6a6a6;
+$rasta :linear-gradient(green, yellow, red);
+$Deep_Magenta: #DB00BE;
+$black:#000;
+
+
+//functinal variable
+
+$color-text : $Dark_Cerulean;
+$color-background : $rasta ;
+$heading: $black;
+$hover :$Deep_Magenta;
+
+
+// images path
+
+$path-img : 'images';
+
+
+//media querries
+
+$brk-tablet:' (min-width: 768px)' ;
+$brk-desktop:' (min-width: 1024px)';
