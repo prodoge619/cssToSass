@@ -12,14 +12,12 @@
     }
 
 }
-
-
 .aboutMe {
 	@extend %center;
   padding: 5%;
 	@extend %color;
 	@extend %fontSize;
-  
+
   &::after {
       @include tablet {
         content: "";
@@ -35,7 +33,7 @@
 	@extend %center;
 	background:$color-background;
 	padding: 6% 3%;
-  
+
   & p {
 	@extend %color;
 	@extend %fontSize;
@@ -46,14 +44,14 @@
       display: block;
       clear: both;
     }
-  
+
 }
 
 .contactArea {
 	padding: 7% 3%;
 	@extend %center;
 	@extend %fontSize;
-  
+
   & p,& a {
     	@extend %color;
   }
@@ -65,8 +63,8 @@
   @include tablet {
     max-width: 40%;
 	  float: right;
-}  
-  
+}
+
 }
 
 .story {
@@ -85,14 +83,11 @@
         float: left;
         height: 500px;
     }
-    
+
    @include desktop  {
       width: 33.33%;
 			padding-left:3%;
 			height: 500px;
     }
-  
+
 }
-
-
-

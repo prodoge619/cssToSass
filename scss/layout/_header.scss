@@ -1,7 +1,7 @@
 
 
 .top {
-	font-size: 1.3em;
+	font-size: $one-three;
 	padding-top: 3%;
 	padding-bottom: 3%;
   @media #{$brk-tablet} {
@@ -20,7 +20,7 @@
 	text-align: center;
 	padding-left: 5%;
 	padding-right: 5%;
-  
+
   & li {
 	background: $color-background;
   @media #{$brk-tablet} {
@@ -34,8 +34,8 @@
     }
 
   }
-  
- 
+
+
    &::after {
       @media #{$brk-desktop} {
         content: "";
@@ -52,12 +52,12 @@
 	display:block;
 	background:$color-background;
 	margin: 2% auto;
-	font-size: 1em;
+	font-size: $one;
 	max-width: 90%;
   @media #{$brk-tablet} {
    background: none;
   }
 }
 
-  
+
 }
