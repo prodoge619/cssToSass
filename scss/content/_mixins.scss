@@ -6,7 +6,7 @@
        url('#{$path-font}/#{$file}-webfont.woff') format('woff'),
        url('#{$path-font}/#{$file}-webfont.ttf') format('truetype');
 }
-	
+
 }
 
 //Text
@@ -16,7 +16,7 @@
 	line-height: $l-height;
 	font-weight: $weight;
 	color: $color;
-	
+
 }
 
 //Media queries
@@ -26,13 +26,16 @@ $desktop-width:1024px;
 
 @mixin tablet {
   @media (min-width: #{$tablet-width}) {
-    @content;
+    .story {
+      font-size: 19px;
+    }
   }
 }
 
 @mixin desktop {
   @media (min-width: #{$desktop-width}) {
-    @content;
+    .story {
+      font-size: 29px;
+    }
   }
 }
-
